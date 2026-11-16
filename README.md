@@ -12,15 +12,15 @@ Recovery and repair environment for Wicofe OS.
 
 ## Safety requirements
 
-Recovery operations must distinguish read-only diagnostics from destructive repair. Require explicit confirmation for data-changing actions, preserve logs where possible, and validate backup/restore integrity.
+Recovery operations must distinguish read-only diagnostics from destructive repair. Require explicit confirmation for data-changing actions, preserve logs where possible, and validate backup/restore integrity. Recovery should default to read-only inspection and must not execute binaries or scripts from a damaged target installation.
 
 ## Boundaries
 
-Wicofe-Installer owns installation; Wicofe-Update owns update orchestration; ONWFS owns filesystem-specific consistency and repair rules. Recovery coordinates these components without redefining their formats.
+Wicofe-Installer owns installation; Wicofe-Update owns update orchestration and update-state transitions; ONWFS owns filesystem-specific consistency and repair rules; Wicofe-Storage owns storage discovery and operations. Recovery coordinates these components without redefining their formats or state machines.
 
 ## Status
 
-Initial repository baseline; no recovery image or repair utility is claimed.
+Initial repository baseline. No recovery image, repair utility, backup engine, or restore implementation is claimed.
 
 ## License
 
@@ -28,4 +28,4 @@ Original project code targets MPL-2.0; external utilities and dependencies requi
 
 ## Documentation
 
-See [docs/INDEX.md](docs/INDEX.md) for this repository's technical documentation. The [central repository documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md) identifies canonical ownership and cross-repository boundaries.
+See [docs/INDEX.md](docs/INDEX.md) for the [recovery environment architecture](docs/RECOVERY_ENVIRONMENT_ARCHITECTURE_0.1.md) and technical documentation. The [central repository documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md) identifies canonical ownership and cross-repository boundaries.
