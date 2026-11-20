@@ -18,5 +18,5 @@ This directory documents Wicofe's recovery environment and system repair workflo
 ## Safety
 Default to read-only diagnostics. Require explicit confirmation for mutations, preserve data where possible, verify backup/restore integrity, and report partial or indeterminate outcomes honestly. ONWFS 0.2.x is still a draft; no ONWFS repair capability is implied.
 
-- [Central documentation index](https://github.com/Waizusora/Wicofe-Docs/blob/main/INDEX.md)
-- [Repository documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md)
+- [Central documentation index](https://github.com/Waizusora/Wicofe-Doc/blob/main/INDEX.md)
+- [Repository documentation map](https://github.com/Waizusora/Wicofe-Doc/blob/main/REPOSITORY_DOCUMENTATION_MAP.md)
